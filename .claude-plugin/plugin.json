@@ -3,6 +3,13 @@
   "displayName": "QuotaBird",
   "version": "1.0.0",
   "description": "Practical sales checks for people who carry a number. Pressure-test a deal, quota, territory, pipeline, or important brief before the meeting does.",
-  "author": { "name": "Mark Flournoy", "url": "https://quotabird.com" },
-  "license": "MIT"
+  "author": {
+    "name": "Mark Flournoy",
+    "url": "https://quotabird.com"
+  },
+  "license": "MIT",
+  "homepage": "https://quotabird.com",
+  "repository": "https://github.com/flourcode/quotabird-plugin",
+  "supportUrl": "https://quotabird.com",
+  "documentationUrl": "https://github.com/flourcode/quotabird-plugin#readme"
 }
