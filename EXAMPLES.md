@@ -72,3 +72,17 @@ Not really. You're at risk.
 Half the pipeline you need isn't there. Where does it come from?
 
 If your win rate is really 20%, the gap is $8M. Coverage only counts if the deals are real, so check a few before you commit any of it.
+
+## Comp plan (Pay Check)
+
+Inputs: base $150K, variable $130K, 1.5x the normal rate above 100% of quota, no cap, no threshold.
+Rows: 50% $215K, 75% $248K, 100% $280K, 125% $329K, 150% $378K, 200% $475K.
+Verdict: "+$98K. Yes, it pays for beating the number. At 150% of quota you'd make $378K, $98K more than at 100%." About half of AEs hit quota (Bridge Group, 2026), so budget on the 75% and 100% rows.
+With variable capped at 120% of target: everything from 125% up is $306K, and the verdict becomes "Not much above 100%."
+
+## Pipeline from an export, with the slip test
+
+Inputs: a pasted export with amount, stage, close date and probability columns; target $4M, 25% win rate, year ends September 30. Proposal and Negotiation count as qualified.
+Count: Acme $1.5M (Proposal) and Gamma $1.2M (Negotiation) are qualified pipeline, $2.7M. Beta (Discovery) is early; Delta closes after the year end. Echo ($600K closed won) is already closed. The probability column is not used.
+Math: remaining $3.4M; at 25% you need 4X, $13.6M; you have 0.8X; $10.9M short. Verdict: "No. You're short."
+Slip test: without Acme, $1.2M of pipeline, 0.35X, $12.4M short.

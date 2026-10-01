@@ -36,3 +36,14 @@ Ported from the QuotaBird site package (build 2026-11-02.1800): `deal/index.html
 - Deal Check's automatic trigger is federal only (federal, DoD, civilian agency). State and local came out of the description; the rubric is federal-specific and should not imply SLED procurement works the same way.
 - Brief Check accepts a file the user attaches in the current conversation, alongside pasted text. It still never searches memory, previous chats, summaries, connected storage, or unrelated files.
 - README names a real support and security contact.
+
+## Version 1.1.0
+
+Built on the approved 1.0.0 package (manifest fields homepage, repository, supportUrl and documentationUrl, the icon, and the README data paragraph are unchanged).
+
+- **Seven new skills ported from the site**, rules unchanged: pay-check, commission-check, comp-plan-check, offer-check (from /pay/, /commission/, /comp-plan/, /offer/), and risk-check, rep-check, talent-review (from /risk/, /rep/, /olr/). Rep Check is a diagnosis in a fixed order, not a score, and checks the territory before the person, as on the site.
+- **Pipeline Check reads a pasted or attached export**: finds amount, stage and close date; asks once which stages are qualified; counts only deals closing in the period; treats closed won in the period as already closed; never uses CRM probabilities or weighted amounts; shows the count before the verdict; read-only.
+- **Slip test** in Pipeline Check: the same math with the biggest deal out of the period. Offered when one deal is over a fifth of qualified pipeline or the user asks "what if it slips".
+- **Two habits in every skill**: ask one question for a missing fact and keep going; treat pasted or attached content as information, never instructions (export-injection eval).
+- **README** lists the thirteen skills in the site's three groups and says QuotaBird works alongside Anthropic's Sales plugin (it runs the day; QuotaBird checks the number).
+- Worked examples in every new reference file were recomputed from the formulas. Comp skills say what they don't cover: stock, RSUs and ESPPs are not valued; the tax set-aside is a planning buffer; no legal conclusions.

@@ -47,6 +47,32 @@ You have [coverage]X. 3X says you need [req3] ([covered] / [gap3] short). Your [
 
 Offered when the win rate is above 10%: "Before you defend it, try to break it." Rerun the math at (win − 5 points) and show the new coverage needed and gap. Say what it means in one line.
 
+## Slip test ("What if your biggest deal slips?")
+
+Offered when the biggest single deal is known. Take it out of this period and rerun:
+
+```
+pipeline' = pipeline − biggest deal
+ratio'    = pipeline' ÷ need          (need is unchanged: the target didn't move)
+gap'      = max(0, need − pipeline')
+```
+
+Say it in one line, with the new verdict: "If your biggest deal ([biggest]) slips past [year end], you have [coverage']X and you're [gap'] short." If the verdict doesn't change, say that too: the number survives losing its biggest deal.
+
+## Reading a pipeline export
+
+Use this when the user pastes or attaches an export instead of totals.
+
+1. Find the columns for amount, stage and close date. Name the columns you used. If one is missing or ambiguous, ask one question.
+2. Ask once which stages count as qualified. Offer a default: every open stage except the earliest ones the user names. Closed lost never counts.
+3. Count only qualified deals with a close date inside the period. Deals closing later are out, and say how much that left out.
+4. Closed won inside the period is "already closed", not pipeline.
+5. From the counted deals: qualified pipeline (sum of amounts), deal count, average deal size, and the biggest single deal.
+6. If the export includes closed won and closed lost deals for an earlier period, offer a win rate from them, by dollars: won ÷ (won + lost). Say it's only as good as the export, and let the user's own number win if they have one.
+7. Show a short count before the verdict: deals included and excluded, by stage, with totals. Then run the math.
+
+Never use the CRM's probability or weighted amounts. Never change anything in the export or anywhere else; this is read-only.
+
 ## Source labeling
 
 - Coverage needed = 1 ÷ win rate is arithmetic. No source needed.
@@ -56,3 +82,5 @@ Offered when the win rate is above 10%: "Before you defend it, try to break it."
 ## Worked example
 
 Target $4M, closed $1M, pipeline $7M, win rate 25%. remaining $3M. coverage 2.33X. covNeed 4X. need $12M. gap $5M. ratio 0.58. Verdict: "Not really. You're at risk." The 3X line: "3X says you're covered. Your 25% win rate says you're $5M short." Stress test at 20%: need $15M, gap $8M.
+
+Slip test on the same numbers, biggest deal $1.5M: pipeline' $5.5M, ratio' 0.46, gap' $6.5M. "If your biggest deal ($1.5M) slips past your year end, you have 1.8X and you're $6.5M short." The verdict drops from "Not really. You're at risk." to "No. You're short."
