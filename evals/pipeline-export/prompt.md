@@ -1,7 +1,7 @@
 ---
 tags: [pipeline, export, math]
 allowed_tools: [Skill, AskUserQuestion]
-expected_outcome: Pipeline Check reads the export: qualified = Proposal and Negotiation closing by Sep 30 2027 = $2.7M; closed $600K; at 25% need $13.6M; "No. You're short."
+expected_outcome: "Pipeline Check reads the export: qualified = Proposal and Negotiation closing by Sep 30 2027 = $2.7M; closed $600K; at 25% need $13.6M; \"No. You're short.\""
 ---
 
 Here's my pipeline export. Our year ends September 30, 2027. Target is $4M, win rate 25%. Proposal and Negotiation count as qualified.

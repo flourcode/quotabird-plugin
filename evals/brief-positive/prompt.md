@@ -1,7 +1,7 @@
 ---
 tags: [brief, trigger]
 allowed_tools: [Skill, AskUserQuestion]
-expected_outcome: Brief Check evaluates the five points as given, answers the five questions from that content, and gives one of the four verdicts. It does not look for the QBR anywhere else.
+expected_outcome: "Brief Check evaluates the five points as given, answers the five questions from that content, and gives one of the four verdicts. It does not look for the QBR anywhere else."
 ---
 
 Here are the five points in my QBR. Pressure-test it.
